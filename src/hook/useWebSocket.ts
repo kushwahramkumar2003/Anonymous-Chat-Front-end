@@ -59,7 +59,7 @@ export default function useWebSocket({
         }
       };
 
-      ws.onclose = (event) => {
+      ws.onclose = () => {
         setConnectionStatus("Disconnected");
         socketRef.current = null;
 

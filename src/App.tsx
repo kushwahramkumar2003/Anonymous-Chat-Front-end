@@ -54,7 +54,7 @@ export default function App() {
     [toast]
   );
 
-  const { sendMessage, connectionStatus, connect } = useWebSocket({
+  const { sendMessage, connectionStatus } = useWebSocket({
     url: "ws://localhost:8080",
     onMessage: handleWebSocketMessage,
     reconnectAttempts: 3,
@@ -210,9 +210,7 @@ export default function App() {
                     </Avatar>
                     <div
                       className={`p-2 rounded-lg ${
-                        msg.sender === username
-                          ? "bg-green-600"
-                          : "bg-zinc-700"
+                        msg.sender === username ? "bg-green-600" : "bg-zinc-700"
                       }`}
                     >
                       <p className="text-sm break-words">{msg.content}</p>
@@ -248,4 +246,3 @@ export default function App() {
     </div>
   );
 }
-
