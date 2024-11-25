@@ -204,7 +204,7 @@ export default function App() {
                     }`}
                   >
                     <Avatar className="w-8 h-8">
-                      <AvatarFallback>
+                      <AvatarFallback className="text-white bg-zinc-600">
                         {getAvatarFallback(msg.sender)}
                       </AvatarFallback>
                     </Avatar>
