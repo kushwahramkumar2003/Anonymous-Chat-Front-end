@@ -56,7 +56,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
 @layer base {
   * {
     @apply border-border;
@@ -64,14 +63,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  html,
-  body,
-  #root {
-    height: 100%;
-    overflow: hidden;
-  }
-}
-
-.overflow-y-auto {
-  -webkit-overflow-scrolling: touch;
 }
